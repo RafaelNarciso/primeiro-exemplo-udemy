@@ -11,10 +11,11 @@ import br.com.rafaeljavaudemy.primeiro_exemplo_udemy.model.Produto;
 
 @Repository
 public class ProdutoRepository {
-
+    //#region
     private List<Produto> produtos = new ArrayList<>();
     private Integer ultimoId = 0;
-
+    //#endregion
+    //#region
     /**
      * Retorna todos os produtos cadastrados.
      * 
@@ -60,7 +61,6 @@ public class ProdutoRepository {
 
     /**
      * Atualiza as informações de um produto na lista.
-     * 
      * @param produto Produto com as novas informações a serem atualizadas.
      * @return O produto atualizado.
      * @throws InputMismatchException se o produto não for encontrado na lista.
@@ -75,4 +75,6 @@ public class ProdutoRepository {
         produtos.add(produto);
         return produto;
     }
+
+    //#endregion
 }
