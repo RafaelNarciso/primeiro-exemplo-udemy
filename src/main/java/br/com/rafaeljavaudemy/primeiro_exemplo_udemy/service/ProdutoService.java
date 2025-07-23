@@ -12,7 +12,7 @@ import java.util.Optional;
 @Service
 public class ProdutoService {
 
-    //#region
+    //#region  aqui estou definindo a classe como um serviço
     @Autowired //aqui estou dizendo deixas que agora eu tomo contar
     private ProdutoRepository produtoRepository;
 
