@@ -1,15 +1,26 @@
 package br.com.rafaeljavaudemy.primeiro_exemplo_udemy.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Produto {
     //#region Atributos
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long  id;
+
     private String nome;
     private Integer quantidade;
     private Double valor;
-    private String Observacao;
+    private String observacao;
     //#endregion
     
     //#region Getters e Setters
+
+
     public long getId() {
         return id;
     }
@@ -35,10 +46,10 @@ public class Produto {
         this.valor = valor;
     }
     public String getObservacao() {
-        return Observacao;
+        return observacao;
     }
     public void setObservacao(String observacao) {
-        Observacao = observacao;
+        this.observacao = observacao;
     }
     //#endregion
     

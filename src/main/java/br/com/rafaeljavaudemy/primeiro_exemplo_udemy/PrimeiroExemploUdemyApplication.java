@@ -15,9 +15,4 @@ public class PrimeiroExemploUdemyApplication {
 		SpringApplication.run(PrimeiroExemploUdemyApplication.class, args);
 	}
 
-
-
-
-
-
 }

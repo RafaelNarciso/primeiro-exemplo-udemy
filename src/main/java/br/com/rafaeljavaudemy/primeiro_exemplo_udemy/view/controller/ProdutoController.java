@@ -1,4 +1,4 @@
-package br.com.rafaeljavaudemy.primeiro_exemplo_udemy.controller;
+package br.com.rafaeljavaudemy.primeiro_exemplo_udemy.view.controller;
 
 import br.com.rafaeljavaudemy.primeiro_exemplo_udemy.model.Produto;
 import br.com.rafaeljavaudemy.primeiro_exemplo_udemy.service.ProdutoService;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("api/produtos")//aqui estou definindo o caminho da minha API
+@RequestMapping("api/produto")//aqui estou definindo o caminho da minha API
 public class ProdutoController {
 
     @Autowired //aqui estou dizendo, que o controller vai gerenciar
