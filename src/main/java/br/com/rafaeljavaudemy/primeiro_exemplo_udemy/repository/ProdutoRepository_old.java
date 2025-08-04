@@ -14,6 +14,8 @@ import br.com.rafaeljavaudemy.primeiro_exemplo_udemy.model.Produto;
 public class ProdutoRepository_old {
 
 //    //#region
+
+// quando era com lista em memória
 //    private List<Produto> produtos = new ArrayList<>();
 //    private Integer ultimoId = 0;
 //    //#endregion
